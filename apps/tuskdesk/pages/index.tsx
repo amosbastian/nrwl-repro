@@ -1,5 +1,12 @@
 import styles from './index.module.css';
 
+export async function getStaticProps() {
+  console.log('getStaticProps');
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+}
+
 export function Index() {
   /*
    * Replace the elements below with your own.
